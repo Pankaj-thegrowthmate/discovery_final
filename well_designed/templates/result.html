@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+  </head>
+  <body>
+
+      <section>
+        <div class="container-1">
+            <h4>{{ result.retailer }}</h4>
+        </div>
+
+        <div class="container-2">
+            <h4>{{ result.outlet }}</h4>
+        </div>
+
+        <div class="container-3">
+            <h4>{{ result.city }}</h4>
+        </div>
+
+        <div class="container-4">
+            <h4>{{ result.state }}</h4>
+        </div>
+
+          <div class="horizontal-cont">
+            {% for post in posts.values() %}
+
+
+              <div class="card" >
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src = '{{ post.logo_location }}' alt="Company Logo">
+                    </div>
+                    <div class="company-name"><b>{{ post.name}}</b></div>
+                </div>
+                    <div class="info-section">
+                        <h3>CATEGORY MATCH</h3>
+                        <h41><b>{{ post.product_matched }}/{{ post.product_input }}</b></h41>
+                        <h3>MATCH SCORE</h3>
+                        <h41><b>{{ post.Match_percent}}%</b></h41><br>
+                        <h3>DISTRIBUTION OUTLET</h3>
+                        <h41><b>{{ post.total_number_of_outlet }}</b></h41>
+
+                    </div>
+                    <div class="button-section">
+                        <form method="post" >
+                            <button class="button2" type="submit" name="discover_more" value="{{ post.name }}"><br><h31><b>Click Here</b></h31> <br>Discover More</button>
+                        </form>
+                    </div>
+              </div>
+
+            {% endfor %}
+        </div>
+
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
