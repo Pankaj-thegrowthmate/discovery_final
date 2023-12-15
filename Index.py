@@ -87,6 +87,6 @@ def last_page():
     est,local=comp_logo(selected_retailer,category_input_list,sub_cat_input_list)
     return render_template("last_page.html",bg=background_image,post=top_8_dict,est=est,local=local)
 
-if __name__ == '__main__':
-    app.debug=True
-    app.run()
+#if __name__ == '__main__':
+ #   app.debug=True
+  #  app.run()
