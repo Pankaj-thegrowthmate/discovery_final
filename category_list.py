@@ -1,11 +1,8 @@
 import pandas as pd
 import numpy as np
-import plotly.express as px
-import plotly.io as pio
-pio.renderers.default="chrome"
+
 from collections import Counter
-import json
-import kaleido
+
 
 
 category =         pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="category_breakdown")
