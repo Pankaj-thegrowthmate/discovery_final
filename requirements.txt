@@ -1,7 +1,4 @@
 pandas
 flask
 numpy
-plotly
 gunicorn
-json
-kaleido
