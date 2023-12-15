@@ -8,12 +8,12 @@ import json
 import kaleido
 
 
-category =         pd.read_excel("/Users/tanya/Desktop/Discovery Project/well_designed/static/excel_data/master_file_discovery_final.xlsx",sheet_name="category_breakdown")
-retailer_info =    pd.read_excel("/Users/tanya/Desktop/Discovery Project/well_designed/static/excel_data/master_file_discovery_final.xlsx",sheet_name="retailer_detail")
-retailer_loc =     pd.read_excel("/Users/tanya/Desktop/Discovery Project/well_designed/static/excel_data/master_file_discovery_final.xlsx",sheet_name="retailer_location")
-retailer_product = pd.read_excel("/Users/tanya/Desktop/Discovery Project/well_designed/static/excel_data/master_file_discovery_final.xlsx",sheet_name="retailers_product")
-comp_df =          pd.read_excel("/Users/tanya/Desktop/Discovery Project/well_designed/static/excel_data/master_file_discovery_final.xlsx",sheet_name="competition")
-logo =             pd.read_excel("/Users/tanya/Desktop/Discovery Project/well_designed/static/excel_data/master_file_discovery_final.xlsx",sheet_name="logo")
+category =         pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="category_breakdown")
+retailer_info =    pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="retailer_detail")
+retailer_loc =     pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="retailer_location")
+retailer_product = pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="retailers_product")
+comp_df =          pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="competition")
+logo =             pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="logo")
 def category_list():
     cat_list = list(set(category["category"]))
     return cat_list
