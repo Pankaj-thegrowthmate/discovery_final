@@ -9,37 +9,38 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/last_page.css') }}">
   </head>
 <body>
-    <section style="background-image: url('{{ bg.bg_image }}');">
-        <div class="container-1">
-            <h4><b>{{ post.product_matched }}/{{ post.product_input }}</b></h4>
-        </div>
-        <div class="container-2">
-            <h4><b>{{ post.exp_prob }}%</b></h4>
-        </div>
-        <div class="horizontal-cont">
-            {% for x in est.values() %}
-            <div class="card">
-                <div class="image-container">
-                    <img src='{{ x.Link }}' alt="Profile Image">
-                </div>
+    <div class="container_first" style="background-image: url('{{ bg.bg_image }}');">
+            <div class="container-1">
+                <h4><b>{{ post.product_matched }}/{{ post.product_input }}</b></h4>
+            </div>
+            <div class="container-2">
+                <h4><b>{{ post.exp_prob }}%</b></h4>
+            </div>
+            <div class="horizontal-cont">
+                {% for x in est.values() %}
+                <div class="card">
+                    <div class="image-container">
+                        <img src='{{ x.Link }}' alt="Profile Image">
+                    </div>
                     <div class="label-container">
                         <span>{{ x.brand_name}}</span>
                     </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="horizontal-cont-1">
-            {% for x in local.values() %}
-            <div class="card">
-                <div class="image-container">
-                    <img src='{{ x.Link }}' alt="Profile Image">
                 </div>
+                {% endfor %}
+            </div>
+            <div class="horizontal-cont-1">
+                {% for x in local.values() %}
+                <div class="card">
+                    <div class="image-container">
+                        <img src='{{ x.Link }}' alt="Profile Image">
+                    </div>
                     <div class="label-container">
                         <span>{{ x.brand_name}}</span>
                     </div>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
+
         <div class="heading-cont-3">
             <h7>Competition Brand</h7>
 
@@ -48,13 +49,13 @@
             <h5>Established Brand</h5>
 
         </div>
-        </div>
+
         <div class="heading-cont-1">
             <h6>Challenger Brand</h6>
 
         </div>
 
-    </section>
+    </div>
 
 </body>
 </html>

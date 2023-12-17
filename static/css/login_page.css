@@ -1,30 +1,35 @@
 body {
-    font-family: Arial, sans-serif;
-
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #320083;
 }
-section {
-    height:100%;
-    width:100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    background:url('/static/image/background_image/Untitled_0.jpg') center;
-    background-size: cover;
 
+.container_first {
+    width: 1166px;
+    height: 700px;
+    border: 1px solid #ccc;
+    position: relative; /* Set position to relative for absolute positioning of the image */
+    overflow: hidden; /* Hide any overflow content */
+    background:url('/static/image/background_image/Untitled_0.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
-    margin-right:600px;
+    width:200px;
+    margin-left:483px;
+    margin-top:220px;
+
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position:relative;
+    z-index: 2;
 }
 
 form {

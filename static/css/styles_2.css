@@ -1,65 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-* {
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a::after {
-    content: "";
-}
-
-a:hover::after {
-    display: block;
-    border: 1px solid white;
-    animation: under-line .5s ease-in-out 1;
-}
-
-@keyframes under-line {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-section {
-    min-height: 100vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #320083;
+}
+
+.container_first {
+    width: 1166px;
+    height: 700px;
+    border: 1px solid #ccc;
+    position: relative; /* Set position to relative for absolute positioning of the image */
+    overflow: hidden; /* Hide any overflow content */
     background:url('/static/image/background_image/Untitled_4.jpg') center;
+    background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
 }
 
 .login-container {
-    height: 460px;
-    width: 290px;
+    height: 360px;
+    width: 240px;
     display: flex;
-    margin-right:160px;
-    margin-top:160px;
+    margin-left:800px;
+    margin-top:205px;
     color:#320083;
     padding-top:50px;
     flex-direction: column;
 
 }
 .checklist{
-    height:300px;
+    height:250px;
     margin-left:20px;
     list-style: none;
 
@@ -124,8 +96,8 @@ h2 {
 }
 
 .button {
-  width:260px;
-  height:60px;
+  width:205px;
+  height:50px;
 
   padding: 10px 20px; /* Adjust padding as needed */
   text-align: center;
@@ -134,11 +106,12 @@ h2 {
   border: 2px solid #fff;
   color: #000; /* Black text color */
   background-color: transparent; /* Transparent background */
+  opacity:0.01;
   cursor: pointer;
   position: absolute; /* Set the position to absolute */
   bottom: 50px; /* Align the button 50px above the bottom */
-  margin-bottom: 26px; /* Add margin for spacing (adjust as needed) */
-  margin-left:30px;
+  margin-bottom: 44px; /* Add margin for spacing (adjust as needed) */
+  margin-left:25px;
 }
 
 .create-account {

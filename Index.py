@@ -88,5 +88,5 @@ def last_page():
     return render_template("last_page.html",bg=background_image,post=top_8_dict,est=est,local=local)
 
 #if __name__ == '__main__':
- #   app.debug=True
-  #  app.run()
+#    app.debug=True
+#    app.run()

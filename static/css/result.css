@@ -1,38 +1,49 @@
-section {
-    min-height: 100vh;
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #320083;
+}
+
+.container_first {
+    width: 1166px;
+    height: 700px;
+    border: 1px solid #ccc;
+    position: relative; /* Set position to relative for absolute positioning of the image */
+    overflow: hidden; /* Hide any overflow content */
     background:url('/static/image/background_image/Untitled_5.jpg') center;
+    background-repeat: no-repeat;
     background-size: cover;
-    color: #000;
 }
 
 .container-1{
     display: flex;
     position:absolute;
-    margin-right:790px;
-    margin-top:-350px
+    margin-left:450px;
+    margin-top:150px
 }
 .container-2{
     display: flex;
     position:absolute;
-    margin-right:730px;
-    margin-top:-45px
+    margin-left:385px;
+    margin-top:280px
 }
 
 .container-3{
     display: flex;
     position:absolute;
-    margin-right:750px;
-    margin-top:270px
+    margin-left:410px;
+    margin-top:400px
 }
 
 .container-4{
     display: flex;
     position:absolute;
-    margin-right:790px;
-    margin-top:570px
+    margin-left:450px;
+    margin-top:530px
 }
 
 
@@ -45,7 +56,7 @@ h4{
 
 
 h41{
-    font-size:1.8rem;
+    font-size:1.5rem;
     text-align:Center;
     color:#320083;
 }
@@ -53,12 +64,14 @@ h41{
 h3{
   text-align:Center;
   color:#7B7B7B;
+  font-size:1rem;
 }
 
 h31{
 
+    font-size:1.2rem;
+    color:#7B7B7B;
     font-size:1rem;
-    color:#320083;
 
 }
 
@@ -68,10 +81,10 @@ h31{
 
     postion:absolute;
     border:0px solid #fff;
-    height:510px;
-    width:490px;
-    margin-right:193px;
-    margin-top:175px;
+    height:410px;
+    width:400px;
+    margin-left:615px;
+    margin-top:205px;
     overflow-x: scroll;
 
 }
@@ -80,9 +93,9 @@ h31{
 
 .card {
   margin-top:0px;
-  margin-left:10px;
-  width: 450px;
-  height: 200px;
+  margin-left:0px;
+  width: 380px;
+  height: 150px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -126,7 +139,7 @@ h31{
 .info-section {
   flex: 1;
   padding: 2px;
-  line-height:20px;
+  line-height:16px;
   text-align:Center;
 }
 
@@ -161,8 +174,3 @@ button {
   background-color:#FF4600;
 }
 
-h3{
-  font-size:1.5rem;
-  font-color:#E39749;
-  text-align:Center;
-}

@@ -1,51 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-* {
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a::after {
-    content: "";
-}
-
-a:hover::after {
-    display: block;
-    border: 1px solid white;
-    animation: under-line .5s ease-in-out 1;
-}
-
-@keyframes under-line {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-section {
-    min-height: 100vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    background:url('/static/image/background_image/Untitled_1.jpg') center;
-    background-size: cover;
-    color: #fff;
+    height: 100vh;
+    background-color: #320083;
 }
+
+.container_first {
+    width: 1166px;
+    height: 700px;
+    border: 1px solid #ccc;
+    position: relative; /* Set position to relative for absolute positioning of the image */
+    overflow: hidden; /* Hide any overflow content */
+    background:url('/static/image/background_image/Untitled_1.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 .login-container {
     height: 460px;
@@ -60,91 +34,22 @@ section {
 
 }
 
-h2 {
-    font-size: 1.75em;
-    margin: 0 0 20px;
 
-}
-
-.input-box {
-    position: relative;
-    border-bottom: 2px solid white;
-    margin: 30px 0;
-    width: 310px;
-}
-
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    font-size: 1em;
-    transition: .5s;
-}
-
-.input-box input:valid ~ label,
-.input-box input:focus ~ label {
-    top: -5px;
-}
-
-.input-box input {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    width: 100%;
-    height: 50px;
-    font-size: 1em;
-    padding: 0 40px 0 5px;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.4em;
-    line-height: 45px;
-}
-
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    width: 310px;
-    margin: 0 0 20px;
-}
 
 .button {
-  width:140px;
-  height:140px;
+  width:110px;
+  height:110px;
 
   padding: 10px 20px; /* Adjust padding as needed */
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border: 2px solid #fff;
-  border-radius:70px;
+
+  border: 2px solid #000;
+  border-radius:55px;
   opacity:0.01;
   color: #fff; /* Black text color */
   background-color: #E39749; /* Transparent background */
   cursor: pointer;
   position: absolute; /* Set the position to absolute */
   bottom: -30px; /* Align the button 50px above the bottom */
-  margin-bottom: 80px; /* Add margin for spacing (adjust as needed) */
-  margin-left:345px;
-}
-
-
-
-
-.create-account {
-    margin: 12px 0 0 0;
-}
-
-@media screen and (max-width: 360px) {
-    .login-container {
-        width: 100%;
-        height: 100vh;
-        border: none;
-        border-radius: none;
-    }
+  margin-bottom: 105px; /* Add margin for spacing (adjust as needed) */
+  margin-left:513px;
 }
