@@ -1,14 +1,14 @@
 import pandas as pd
 import numpy as np
-<<<<<<< HEAD
+
 from collections import Counter
 
 
-=======
+
 import openpyxl
 from collections import Counter
 
->>>>>>> a17a9a4c78f0925d5e202072fe646e2db0619c40
+
 
 
 category =         pd.read_excel("templates/excel_data/master_file_discovery_final.xlsx",sheet_name="category_breakdown")
